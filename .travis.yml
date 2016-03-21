@@ -18,7 +18,7 @@ android:
 
 deploy:
  provider:
- releases
+ releases:
  apikey: $GITHUBKEY
  file: app/build/outputs/apk/app-release.apk
  skip_cleanup: true
@@ -27,6 +27,6 @@ deploy:
 
  notifications:
   email: recipients:
-  - myemail@address.com
+  - tomoskozi.mate@aut.bme.hu
   onsuccess: always
   onfailure: always
